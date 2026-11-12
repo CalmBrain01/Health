@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Structured psychiatry OPD interview for the Somatic Odyssey study, with automatic PHQ-15, PHQ-9 and GAD-7 scoring.">
+  <title>Somatic Odyssey proforma</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M5 25c6 0 4-9 11-9s5-9 11-9' fill='none' stroke='%230E6B6B' stroke-width='3.5' stroke-linecap='round'/%3E%3Ccircle cx='5' cy='25' r='3.5' fill='%230E6B6B'/%3E%3Ccircle cx='27' cy='7' r='3.5' fill='%230E6B6B'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="masthead">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 32 32"><path d="M5 25c6 0 4-9 11-9s5-9 11-9" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="5" cy="25" r="3.5" fill="currentColor"/><circle cx="27" cy="7" r="3.5" fill="currentColor"/></svg>
+        </span>
+        <span>
+          <span class="brand-name">Somatic Odyssey</span>
+          <span class="brand-sub">Clinical research proforma, psychiatry OPD</span>
+        </span>
+      </div>
+      <span id="studyChip" class="study-chip" hidden></span>
+    </header>
+
+    <nav id="route" class="route" aria-label="Interview progress" hidden></nav>
+
+    <main id="stage"></main>
+
+    <footer class="colophon">
+      When you choose Send record, the answers and scores are posted to the study’s Formboost inbox. Nothing is stored in this browser.
+    </footer>
+  </div>
+
+  <noscript>This proforma needs JavaScript turned on.</noscript>
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
